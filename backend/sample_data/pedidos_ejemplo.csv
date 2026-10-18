@@ -1,0 +1,26 @@
+reference,customer_name,customer_phone,address,lat,lng,delivery_date,window_start,window_end,weight_kg,volume_m3,service_minutes
+CSV-1020-001,Paula Moreno,633998441,"Calle Real 64, Chamberí, Madrid",40.427398,-3.713095,2026-10-20,12:00,16:00,33.1,0.19,3
+CSV-1020-002,Paula Fernández,692304466,"Avenida de la Constitución 56, Carabanchel, Madrid",40.388267,-3.721657,2026-10-20,12:00,16:00,37.2,0.303,5
+CSV-1020-003,Leo Torres,686090044,"Paseo de la Ribera 22, Retiro, Madrid",40.419043,-3.675368,2026-10-20,12:00,16:00,35.1,0.169,8
+CSV-1020-004,Lucía Fernández,637348796,"Paseo de la Ribera 137, Centro, Madrid",40.407955,-3.70699,2026-10-20,10:00,12:00,9.7,0.167,3
+CSV-1020-005,Paula Romero,631583815,"Calle Mayor 114, Tetuán, Madrid",40.461718,-3.687376,2026-10-20,09:00,19:00,42.5,0.235,3
+CSV-1020-006,Leo Ruiz,666240329,"Calle de la Estación 109, Arganzuela, Madrid",40.400376,-3.706856,2026-10-20,09:00,13:00,28.2,0.14,5
+CSV-1020-007,Paula Navarro,617435649,"Calle del Pinar 55, Latina, Madrid",40.401974,-3.735,2026-10-20,12:00,16:00,37.3,0.053,8
+CSV-1020-008,Sofía Romero,690486080,"Calle Mayor 39, Villaverde, Madrid",40.347945,-3.702017,2026-10-20,09:00,13:00,5.2,0.059,5
+CSV-1020-009,Sofía Sánchez,685291546,"Paseo de la Ribera 128, Retiro, Madrid",40.416363,-3.668385,2026-10-20,12:00,16:00,6.2,0.29,5
+CSV-1020-010,Pablo García,688610321,"Calle del Olivo 87, Usera, Madrid",40.377894,-3.70922,2026-10-20,09:00,13:00,37.2,0.146,8
+CSV-1020-011,Martina López,615045580,"Paseo de la Ribera 103, Ciudad Lineal, Madrid",40.442875,-3.661935,2026-10-20,10:00,12:00,38.6,0.087,5
+CSV-1020-012,Julia Sánchez,643516928,"Calle del Sol 76, Arganzuela, Madrid",40.396886,-3.6889,2026-10-20,16:00,18:00,39.8,0.153,5
+CSV-1020-013,Pablo Álvarez,653029632,"Calle Nueva 137, Arganzuela, Madrid",40.391291,-3.690288,2026-10-20,15:00,19:00,20.0,0.109,5
+CSV-1020-014,Elena Sánchez,660979185,"Paseo de la Ribera 51, Chamartín, Madrid",40.455217,-3.673325,2026-10-20,12:00,16:00,31.6,0.338,5
+CSV-1020-015,Leo Navarro,695907987,"Calle de los Almendros 169, Villaverde, Madrid",40.344501,-3.694442,2026-10-20,16:00,18:00,32.1,0.149,5
+CSV-1020-016,Lucía Martínez,677331161,"Calle de la Fuente 52, Usera, Madrid",40.374023,-3.711168,2026-10-20,12:00,16:00,30.6,0.264,5
+CSV-1020-017,Paula Pérez,665946941,"Calle Nueva 144, Latina, Madrid",40.403559,-3.733364,2026-10-20,12:00,16:00,28.8,0.27,5
+CSV-1020-018,Lucía Martínez,651272096,"Calle de la Estación 149, Salamanca, Madrid",40.421575,-3.686717,2026-10-20,16:00,18:00,14.2,0.34,5
+CSV-1020-019,Carmen Fernández,633119397,"Calle de los Almendros 118, Salamanca, Madrid",40.426923,-3.668687,2026-10-20,09:00,13:00,40.7,0.305,8
+CSV-1020-020,Leo Gómez,643576939,"Calle Real 71, Chamberí, Madrid",40.433337,-3.696424,2026-10-20,15:00,19:00,31.8,0.072,8
+CSV-1020-021,Adrián Álvarez,632747443,"Calle de la Estación 137, Carabanchel, Madrid",40.378312,-3.728883,2026-10-20,16:00,18:00,1.7,0.122,8
+CSV-1020-022,Lucía Moreno,681539664,"Calle de los Almendros 163, Arganzuela, Madrid",40.389216,-3.70298,2026-10-20,10:00,12:00,12.5,0.056,3
+CSV-1020-023,Hugo Gómez,678630375,"Calle Real 143, Chamberí, Madrid",40.438599,-3.711513,2026-10-20,09:00,13:00,20.3,0.246,8
+CSV-1020-024,Mateo Ruiz,633063559,"Calle de los Almendros 71, Salamanca, Madrid",40.432823,-3.686446,2026-10-20,09:00,19:00,41.4,0.274,5
+CSV-1020-025,Martina Romero,625242414,"Calle Mayor 33, Puente de Vallecas, Madrid",40.397851,-3.675696,2026-10-20,10:00,12:00,4.8,0.268,8

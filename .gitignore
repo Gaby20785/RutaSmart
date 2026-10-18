@@ -1,0 +1,24 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+.pytest_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+backend/*.db
+backend/.env
+
+# Node
+node_modules/
+frontend/dist/
+
+# Editor / SO
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Material del curso (no se publica)
+*.pdf
+*.xlsx

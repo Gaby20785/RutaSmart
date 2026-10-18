@@ -1,0 +1,41 @@
+# Entorno completo: PostgreSQL + PostGIS, API (FastAPI) y frontend (React servido con nginx)
+# Uso: docker compose up --build   →   http://localhost:8080
+services:
+  db:
+    image: postgis/postgis:16-3.4
+    environment:
+      POSTGRES_USER: rutasmart
+      POSTGRES_PASSWORD: rutasmart
+      POSTGRES_DB: rutasmart
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    healthcheck:
+      # -h 127.0.0.1: comprueba por TCP (el servidor temporal de inicialización solo usa socket)
+      test: ["CMD-SHELL", "pg_isready -h 127.0.0.1 -U rutasmart -d rutasmart"]
+      interval: 5s
+      retries: 10
+
+  backend:
+    build: ./backend
+    restart: on-failure
+    environment:
+      DATABASE_URL: postgresql+psycopg://rutasmart:rutasmart@db:5432/rutasmart
+      SECRET_KEY: ${SECRET_KEY:-dev-secret-cambiar-en-produccion}
+      CORS_ORIGINS: http://localhost:8080
+    depends_on:
+      db:
+        condition: service_healthy
+    ports:
+      - "8000:8000"
+
+  frontend:
+    build: ./frontend
+    depends_on:
+      - backend
+    ports:
+      - "8080:80"
+
+volumes:
+  pgdata:
