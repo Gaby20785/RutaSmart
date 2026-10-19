@@ -1,6 +1,6 @@
 # Product Backlog — RutaSmart (P05)
 
-> Versión 1.1 · Baseline H2, replanificada el 19/10/2026 (RFC-005) · Responsable: Product Owner
+> Versión 1.1 · Baseline H2, replanificada el 19/10/2026 (RFC-003) · Responsable: Product Owner
 > Priorización MoSCoW · Estimación en story points (Fibonacci: 1, 2, 3, 5, 8, 13)
 
 ---
@@ -27,9 +27,9 @@
 | **Comprometido** | | **18 requerimientos** | **136** |
 | *Si sobra capacidad* | | *RF13 (escalabilidad 200 rutas) y RF20 (documentación del algoritmo)* | *11* |
 
-> **Replanificación del 19/10/2026 (RFC-005):** el Sponsor fijó las entregas el 09/11 y el 30/11, así que quedan 3 sprints de 2 semanas en lugar de 4. Con la velocity del Sprint 1 (34 SP) caben 102 SP y quedaban 113. Se aplicó el plan B previsto: **RF13 y RF20 salen del compromiso** (11 SP). Seguimos en 18 requerimientos, por encima del mínimo de 16.
+> **Replanificación del 19/10/2026 (RFC-003):** con el ajuste del calendario (revisión intermedia el 09/11 y cierre el 30/11) quedan 3 sprints de 2 semanas en lugar de 4. Con la velocity del Sprint 1 (34 SP) caben 102 SP y quedaban 113. Se aplicó el plan B previsto: **RF13 y RF20 salen del compromiso** (11 SP). Seguimos en 18 requerimientos, por encima del mínimo de 16.
 
-> **Nota de replanificación respecto a la hoja P05 del Excel:** la hoja estima hasta 7 sprints, pero el calendario real tiene 5. Se han reagrupado los requerimientos y se han **adelantado RF15 (autenticación por rol) y RF18 (pipeline CI)** al Sprint 1, porque el hito H3 exige "setup + auth + pipeline CI". RF17 (integración con mapas) pasa al Sprint 2 porque la app del repartidor depende de ella. Cambios registrados como **RFC-001 y RFC-002** en [08_Control_Cambios.md](08_Control_Cambios.md).
+> **Decisiones de planificación (antes de aprobar la baseline):** la hoja P05 estima hasta 7 sprints, pero el calendario tiene 4, así que se reagruparon los requerimientos. RF15 (autenticación por rol) se priorizó como Must y se adelantó al Sprint 1, porque todas las pantallas dependen del rol del usuario. RF17 (integración con Mapbox) va en el Sprint 2 porque la app del repartidor depende de ella.
 
 ---
 
@@ -75,7 +75,7 @@
 | HU-14 | RF14 | **Como** responsable de datos, **quiero** que los datos personales del cliente final no aparezcan en claro en los logs, **para** cumplir la protección de datos. | Should | 3 |
 | HU-16 | RF16 | **Como** conductor, **quiero** una interfaz con botones grandes y usable con una sola mano o con guantes, **para** operar con seguridad. | Should | 5 |
 
-### Fuera del compromiso (solo si sobra capacidad) · RFC-005
+### Fuera del compromiso (solo si sobra capacidad) · RFC-003
 
 | ID | Req. | Historia de usuario | MoSCoW | SP |
 |---|---|---|---|---|
@@ -217,4 +217,4 @@ Una historia se considera **terminada** cuando:
 | Habilitador técnico (EN-01) | — | 3 |
 | **Total** | **20** | **147** |
 
-> Para aprobar el MVP hacen falta ≥ 16 requerimientos. Tras RFC-005 hay **18 comprometidos (136 SP)**; RF13 y RF20 quedan fuera del compromiso. Si en el Checkpoint (09/11) la velocity baja, el siguiente candidato a recortar es **RF16** (17 requerimientos, todavía por encima del mínimo).
+> Para aprobar el MVP hacen falta ≥ 16 requerimientos. Tras RFC-003 hay **18 comprometidos (136 SP)**; RF13 y RF20 quedan fuera del compromiso. Si en el Checkpoint (09/11) la velocity baja, el siguiente candidato a recortar es **RF16** (17 requerimientos, todavía por encima del mínimo).

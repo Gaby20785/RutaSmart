@@ -1,7 +1,7 @@
 # Project Charter — RutaSmart (P05)
 
 > Optimizador de rutas de entrega con seguimiento en vivo
-> Versión 1.1 · Aprobado en H1 (Kick-off) · Actualizado el 19/10/2026 por el nuevo calendario del Sponsor (RFC-005)
+> Versión 1.1 · Aprobado en H1 (Kick-off) · Actualizado el 19/10/2026 por el ajuste del calendario (RFC-003)
 
 ---
 
@@ -101,7 +101,7 @@ Las empresas pequeñas y medianas de reparto de última milla suelen planificar 
 | H7 | S10 | 26/11/2026 | Feature freeze: solo corrección de errores | Entrega 3 (30/11) |
 | H8 | S10 | 30/11/2026 | Entrega MVP + defensa + cierre formal | **Entrega 3** (30/11) |
 
-*Fechas de entrega fijadas por el Sponsor el 19/10/2026 (RFC-005). El calendario inicial de 11 semanas del curso era referencial.*
+*Calendario ajustado el 19/10/2026 (RFC-003): de 11 semanas de referencia a 10.*
 
 ---
 
@@ -148,7 +148,7 @@ Las empresas pequeñas y medianas de reparto de última milla suelen planificar 
 | Reserva de contingencia (10 %) | | $1.365.000 |
 | **Presupuesto total autorizado** | | **$15.015.000** |
 
-*Montos en pesos chilenos (CLP). Re-baseline del 19/10/2026 (RFC-005); la baseline original (11 semanas, 990 h) era de $15.000.000.*
+*Montos en pesos chilenos (CLP). Re-baseline del 19/10/2026 (RFC-003); la baseline original (11 semanas, 990 h) era de $15.000.000.*
 
 *Presupuesto simulado. Desglose por paquete de trabajo en [07_Presupuesto_EVM.md](07_Presupuesto_EVM.md).*
 

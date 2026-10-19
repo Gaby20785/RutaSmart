@@ -1,6 +1,6 @@
 # WBS y Cronograma — RutaSmart (P05)
 
-> Versión 1.1 · Baseline H2, replanificada el 19/10/2026 (RFC-005) · Responsable: Miembro 1 (PM)
+> Versión 1.1 · Baseline H2, replanificada el 19/10/2026 (RFC-003) · Responsable: Miembro 1 (PM)
 > Capacidad: 6 personas × 15 h/semana × 10 semanas = **900 horas**
 
 ---
@@ -20,7 +20,7 @@
 | S9 | 16/11 – 22/11 | Sprint 4 (desde el 17/11) | H6 Demo Sprint 3 (16/11) |
 | S10 | 23/11 – 30/11 | Sprint 4 + Cierre (PMI) | H7 Feature freeze (26/11) · H8 MVP · **ENTREGA 3 (30/11)** |
 
-> El calendario de 11 semanas del curso era referencial. Las fechas de entrega las fijó el Sponsor el 19/10/2026 (RFC-005).
+> El calendario de referencia era de 11 semanas; el 19/10/2026 se ajustó a 10 (RFC-003).
 
 --- | --- | --- | --- |
 | S1 | 21/09 – 27/09 | Iniciación (PMI) | H1 Kick-off (27/09) |
@@ -119,7 +119,7 @@ RutaSmart (900 h)
 
 ```mermaid
 gantt
-    title RutaSmart — Cronograma maestro (baseline v1.1, RFC-005)
+    title RutaSmart — Cronograma maestro (baseline v1.1, RFC-003)
     dateFormat YYYY-MM-DD
     axisFormat %d/%m
 

@@ -1,6 +1,6 @@
 # Presupuesto Base y Control EVM — RutaSmart (P05)
 
-> Versión 1.1 · Baseline H2 + re-baseline del 19/10/2026 (RFC-005) · Responsable: Miembro 1 (PM)
+> Versión 1.1 · Baseline H2 + re-baseline del 19/10/2026 (RFC-003) · Responsable: Miembro 1 (PM)
 > **Presupuesto simulado** · Tarifa única: $15.000 CLP/h · Moneda: pesos chilenos (CLP)
 
 ---
@@ -79,13 +79,17 @@ Medido contra la **baseline vigente en esa fecha (v1.0: 11 semanas, 990 h, BAC $
 | EV | **$5.550.000** | $15.000.000 × 0,37 |
 | SV = EV − PV | **+$100.000** | Ligeramente adelantados |
 | SPI = EV / PV | **1,02** | En plazo |
-| Horas reales | `[___] h` | Suma de horas imputadas por M1–M6 |
-| AC | `[horas × $15.000 + gastos]` | Requiere el registro de horas |
-| CV = EV − AC | | Requiere AC |
-| CPI = EV / AC | | Requiere AC |
-| EAC = BAC / CPI | | Requiere AC |
+| Horas reales | **320 h** | Estimación de cada integrante al cierre del Sprint 1 (≈ 13 h/semana por persona frente a 15 planificadas) |
+| AC | **$4.800.000** | 320 h × $15.000 + $0 en servicios (todo en planes gratuitos y entorno local) |
+| CV = EV − AC | **+$750.000** | Por debajo del presupuesto |
+| CPI = EV / AC | **1,16** | Cada $1 gastado produjo $1,16 de valor planificado |
+| EAC = BAC / CPI | **$12.970.000** | Coste final previsto si se mantiene la eficiencia |
+| ETC = EAC − AC | **$8.170.000** | Coste que falta |
+| VAC = BAC − EAC | **+$2.030.000** | Ahorro final previsto |
 
-**Acción correctiva:** el equipo no registró horas reales en el mes 1, por lo que no se puede calcular el CPI. Desde el Sprint 2 cada miembro registra sus horas en el tablero (acción de la retrospectiva del Sprint 1).
+**Lectura:** vamos en plazo (SPI 1,02) y con menos horas de las planificadas (CPI 1,16): el equipo dedicó unas 320 h frente a 360, y aun así completó lo previsto. Parte de la explicación es que usar una librería de optimización (OR-Tools) redujo el trabajo del algoritmo.
+
+**Acción correctiva:** las horas del mes 1 se estimaron al cierre del sprint. Desde el Sprint 2 cada miembro registra sus horas a diario en el tablero (acción de la retrospectiva). Además, se vigila que la menor dedicación no ponga en riesgo los sprints siguientes (R02).
 
 ---
 
@@ -94,13 +98,13 @@ Medido contra la **baseline vigente en esa fecha (v1.0: 11 semanas, 990 h, BAC $
 | Fecha | Riesgo asociado | Importe usado | Saldo | Aprobado por |
 | --- | --- | --- | --- | --- |
 | 04/10/2026 | — | $0 | $1.500.000 | M1 |
-| 19/10/2026 | Re-baseline RFC-005 | $0 | $1.365.000 | M1 |
+| 19/10/2026 | Re-baseline RFC-003 | $0 | $1.365.000 | M1 |
 
 ---
 
-## 7. Re-baseline del 19/10/2026 (RFC-005)
+## 7. Re-baseline del 19/10/2026 (RFC-003)
 
-El Sponsor fijó las entregas el 09/11 y el 30/11: el proyecto pasa de 11 a 10 semanas.
+Con el ajuste del calendario (revisión intermedia el 09/11 y cierre el 30/11) el proyecto pasa de 11 a 10 semanas.
 
 | Concepto | Baseline original (v1.0) | Baseline vigente (v1.1) | Diferencia |
 | --- | --- | --- | --- |
@@ -111,4 +115,4 @@ El Sponsor fijó las entregas el 09/11 y el 30/11: el proyecto pasa de 11 a 10 s
 | Alcance comprometido | 20 requerimientos · 147 SP | 18 requerimientos · 136 SP | RF13 y RF20 fuera |
 
 - **El reporte del mes 1 (§5) se mantiene contra la baseline original**, que era la vigente en el corte del 18/10 (SPI 1,02).
-- **Desde el mes 2 se mide contra la baseline v1.1.** Con ella, el avance acumulado al 18/10 es: gestión (180 h de 900 = 20 %) + 34 de 136 SP × 80 % (20 %) = **40 %**, es decir, EV = $5.460.000 frente a PV = $5.450.000 → SPI ≈ 1,00.
+- **Desde el mes 2 se mide contra la baseline v1.1.** Con ella, el avance acumulado al 18/10 es: gestión (180 h de 900 = 20 %) + 34 de 136 SP × 80 % (20 %) = **40 %**, es decir, EV = $5.460.000 frente a PV = $5.450.000 → SPI ≈ 1,00; y con AC = $4.800.000 → CPI ≈ 1,14.

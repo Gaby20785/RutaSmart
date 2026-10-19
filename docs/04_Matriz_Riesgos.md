@@ -50,7 +50,7 @@
 | **2** | | | R14, R15 | R08, R12 | R01, R11 |
 | **1** | | | | R10 | |
 
-**Riesgos prioritarios (rojo):** R02 (disponibilidad del equipo), R04 (subestimación, sube tras RFC-005) y R03 (modo offline). En la baseline (04/10) eran R01, R02 y R03; R01 bajó tras el Sprint 1.
+**Riesgos prioritarios (rojo):** R02 (disponibilidad del equipo), R04 (subestimación, sube tras RFC-003) y R03 (modo offline). En la baseline (04/10) eran R01, R02 y R03; R01 bajó tras el Sprint 1.
 
 ---
 
@@ -77,6 +77,6 @@
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | R15 | Técnico | Diferencias de comportamiento entre SQLite (desarrollo) y PostgreSQL (staging) → errores que solo aparecen al desplegar | 2 | 3 | 🟢 6 | Mitigar | Probar con `docker compose` (PostgreSQL + PostGIS) antes de cada demo; añadir job de tests con PostgreSQL en CI (Sprint 3) | M6 | Fallo en staging no reproducible en local |
 
-**Revisión del 19/10/2026 (RFC-005):** el Sponsor adelanta las entregas (09/11 y 30/11) y el proyecto pasa de 11 a 10 semanas. **R04 (subestimación) sube a 🔴 (P 4 × I 4 = 16)** porque queda menos margen; se mitiga sacando RF13 y RF20 del compromiso (plan B) y dejando RF16 como siguiente recorte. R02 se mantiene en 🔴.
+**Revisión del 19/10/2026 (RFC-003):** con el ajuste del calendario (revisión intermedia el 09/11 y cierre el 30/11) el proyecto pasa de 11 a 10 semanas. **R04 (subestimación) sube a 🔴 (P 4 × I 4 = 16)** porque queda menos margen; se mitiga sacando RF13 y RF20 del compromiso (plan B) y dejando RF16 como siguiente recorte. R02 se mantiene en 🔴.
 
 **Incidencia detectada en el Sprint 1:** el healthcheck de PostgreSQL en Docker daba el servicio por listo antes de tiempo y el backend no arrancaba. Se corrigió y dio origen a R15.
