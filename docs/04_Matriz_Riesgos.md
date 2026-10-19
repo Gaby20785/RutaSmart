@@ -36,7 +36,7 @@
 | R11 | Técnico | Fallo en el despliegue o caída de staging el día de la demo → demo fallida | 2 | 5 | 🟡 10 | Mitigar | Demo grabada de respaldo; feature freeze en H7; despliegue final 48 h antes | M6 | Change failure rate > 20 % |
 | R12 | Legal / seguridad | Exposición de datos personales del cliente (direcciones, teléfonos) en logs o enlaces → incumplimiento RGPD | 2 | 4 | 🟡 8 | Mitigar | Datos sintéticos en dev; anonimización en logs (RF14); tokens no adivinables en enlaces de tracking | M4 | Datos personales detectados en logs en revisión |
 | R13 | Técnico | Cambios o limitaciones en APIs externas (notificaciones push en iOS para PWA) → push no funciona en algunos móviles | 3 | 2 | 🟢 6 | Aceptar | Alternativa: notificación por SMS/email y aviso dentro de la app | M6 | Push no recibido en pruebas con iOS |
-| R14 | Gestión | Documentación de gestión desactualizada respecto al avance real → baja nota en rúbrica | 2 | 3 | 🟢 6 | Mitigar | Actualizar artefactos en cada review; checklist de entrega por hito | M1 | Artefacto con fecha > 2 semanas |
+| R14 | Gestión | Documentación de gestión desactualizada respecto al avance real → pérdida de trazabilidad y de evidencias | 2 | 3 | 🟢 6 | Mitigar | Actualizar artefactos en cada review; checklist de entrega por hito | M1 | Artefacto con fecha > 2 semanas |
 
 ---
 

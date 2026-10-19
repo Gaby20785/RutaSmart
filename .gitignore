@@ -19,6 +19,6 @@ frontend/dist/
 .DS_Store
 Thumbs.db
 
-# Material del curso (no se publica)
+# Archivos de referencia (no se publican)
 *.pdf
 *.xlsx

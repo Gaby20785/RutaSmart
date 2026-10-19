@@ -53,7 +53,7 @@
 | Google Meet / Teams | Ceremonias y reuniones con el Sponsor |
 | Jira o Trello | Product Backlog, sprints, tablero Kanban, burndown |
 | GitHub | Código, pull requests, issues, GitHub Actions (CI/CD) |
-| Notion / Confluence (wiki) | Documentación, actas, reportes, evidencias para la rúbrica |
+| Notion / Confluence (wiki) | Documentación, actas, reportes, evidencias del proyecto |
 | Google Drive | Presentaciones y hojas de métricas |
 
 ---

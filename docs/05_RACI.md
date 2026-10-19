@@ -85,7 +85,7 @@
 | Miembro 6 | 2 | 54 | 4 | 60 |
 | **Total** | **86** | **228** | **46** | **360** |
 
-> Cada miembro: 6 h/semana × 10 semanas = 60 h (re-baseline RFC-003; antes 66 h con 11 semanas). La carga está **equilibrada** (rúbrica: "RACI documentado; asignaciones equilibradas").
+> Cada miembro: 6 h/semana × 10 semanas = 60 h (re-baseline RFC-003; antes 66 h con 11 semanas). La carga está **equilibrada**.
 > Los totales por columna coinciden con la WBS. El tiempo de ceremonias Scrum de los desarrolladores se imputa a su paquete de desarrollo.
 
 ---

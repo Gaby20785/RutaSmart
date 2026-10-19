@@ -29,7 +29,7 @@
 
 > **Replanificación del 19/10/2026 (RFC-003):** con el ajuste del calendario (revisión intermedia el 09/11 y cierre el 30/11) quedan 3 sprints de 2 semanas en lugar de 4. Con la velocity del Sprint 1 (34 SP) caben 102 SP y quedaban 113. Se aplicó el plan B previsto: **RF13 y RF20 salen del compromiso** (11 SP). Seguimos en 18 requerimientos, por encima del mínimo de 16.
 
-> **Decisiones de planificación (antes de aprobar la baseline):** la hoja P05 estima hasta 7 sprints, pero el calendario tiene 4, así que se reagruparon los requerimientos. RF15 (autenticación por rol) se priorizó como Must y se adelantó al Sprint 1, porque todas las pantallas dependen del rol del usuario. RF17 (integración con Mapbox) va en el Sprint 2 porque la app del repartidor depende de ella.
+> **Decisiones de planificación (antes de aprobar la baseline):** la lista inicial de requerimientos estimaba hasta 7 sprints, pero el calendario tiene 4, así que se reagruparon los requerimientos. RF15 (autenticación por rol) se priorizó como Must y se adelantó al Sprint 1, porque todas las pantallas dependen del rol del usuario. RF17 (integración con Mapbox) va en el Sprint 2 porque la app del repartidor depende de ella.
 
 ---
 
