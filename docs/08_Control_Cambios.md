@@ -52,10 +52,10 @@ Se reúne tras el refinamiento semanal (jueves) o de forma extraordinaria si el 
 
 | ID | Fecha | Descripción | Solicitante | Alcance | Tiempo | Coste | Decisión |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| RFC-001 | 02/10/2026 | Adelantar RF15 (autenticación por rol) y RF18 (pipeline CI) al Sprint 1, y RF17 (integración Mapbox) al Sprint 2 | M1 (PM) | Sin cambio en el nº de requerimientos; RF15 pasa de Should a Must | Sin impacto en la fecha final; reordena sprints | 0 € | ✅ Aprobada |
-| RFC-002 | 02/10/2026 | Reagrupar los requerimientos de 7 sprints estimados (hoja P05) a los 5 sprints del calendario real | M2 (PO) | Sin cambio | Ajusta la carga por sprint (~34 SP) | 0 € | ✅ Aprobada |
-| RFC-003 | 15/10/2026 | Añadir al optimizador la opción "Equilibrar carga entre conductores" (activada por defecto) | M5 (Dev) | Mejora de RF3, sin historias nuevas | +1 SP absorbido en el Sprint 1 | 0 € | ✅ Aprobada |
-| RFC-004 | 15/10/2026 | Guardar coordenadas como lat/lng (no como tipo geográfico PostGIS) y usar Nominatim como geocodificador provisional hasta Mapbox | M4 (Dev) | Criterio de aceptación de HU-02 parcialmente aplazado | Tipos PostGIS + Alembic pasan al Sprint 3 (+2 SP) | 0 € | ✅ Aprobada |
+| RFC-001 | 02/10/2026 | Adelantar RF15 (autenticación por rol) y RF18 (pipeline CI) al Sprint 1, y RF17 (integración Mapbox) al Sprint 2 | M1 (PM) | Sin cambio en el nº de requerimientos; RF15 pasa de Should a Must | Sin impacto en la fecha final; reordena sprints | $0 | ✅ Aprobada |
+| RFC-002 | 02/10/2026 | Reagrupar los requerimientos de 7 sprints estimados (hoja P05) a los 5 sprints del calendario real | M2 (PO) | Sin cambio | Ajusta la carga por sprint (~34 SP) | $0 | ✅ Aprobada |
+| RFC-003 | 15/10/2026 | Añadir al optimizador la opción "Equilibrar carga entre conductores" (activada por defecto) | M5 (Dev) | Mejora de RF3, sin historias nuevas | +1 SP absorbido en el Sprint 1 | $0 | ✅ Aprobada |
+| RFC-004 | 15/10/2026 | Guardar coordenadas como lat/lng (no como tipo geográfico PostGIS) y usar Nominatim como geocodificador provisional hasta Mapbox | M4 (Dev) | Criterio de aceptación de HU-02 parcialmente aplazado | Tipos PostGIS + Alembic pasan al Sprint 3 (+2 SP) | $0 | ✅ Aprobada |
 | RFC-005 | 19/10/2026 | Nuevo calendario del Sponsor: Entrega 2 el 09/11 y Entrega 3 el 30/11 (antes ~16/11 y ~07/12) | Sponsor | RF13 y RF20 salen del compromiso: 18 requerimientos, 136 SP | De 11 a 10 semanas; 3 sprints de 2 semanas | BAC de $15.000.000 a $13.650.000 CLP | ✅ Aprobada |
 
 ### Detalle RFC-003
