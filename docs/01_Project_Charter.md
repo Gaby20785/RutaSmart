@@ -45,7 +45,7 @@ Las empresas pequeñas y medianas de reparto de última milla suelen planificar 
 | O3 | Seguimiento en vivo fiable | Latencia de actualización de posición ≤ 5 s | 30/11 |
 | O4 | Calidad del software | Cobertura de tests ≥ 40 % el 02/11 y ≥ 60 % el 30/11 | 02/11 · 30/11 |
 | O5 | Gestión dentro de línea base | SPI ≥ 0,9 y CPI ≥ 0,9 en cada reporte mensual | Mensual |
-| O6 | Validación con usuarios | Feedback documentado de ≥ 3 usuarios reales | 30/11 |
+| O6 | Validación con usuarios | Prueba de uso guiada con ≥ 3 personas ajenas al equipo y encuesta de satisfacción ≥ 3,5/5 | 29/11 |
 
 ---
 
@@ -111,7 +111,7 @@ Las empresas pequeñas y medianas de reparto de última milla suelen planificar 
 - El equipo dedica ~15 h/semana por persona durante las 10 semanas.
 - Los planes gratuitos o de prueba de Mapbox y del proveedor SMS son suficientes para el MVP.
 - Se utilizan datos sintéticos de pedidos y direcciones (no datos reales de clientes).
-- Se puede acceder a ≥ 3 usuarios (repartidores/despachadores) para pruebas y feedback.
+- Las pruebas de uso se hacen con personas ajenas al equipo (compañeros de otros grupos, familiares o amigos) que asumen el rol de despachador o repartidor; no se requieren profesionales de logística.
 
 **Restricciones**
 - Plazo fijo: entrega final el 30/11/2026, sin posibilidad de ampliación.
@@ -140,15 +140,15 @@ Las empresas pequeñas y medianas de reparto de última milla suelen planificar 
 
 | Concepto | Cálculo | Importe |
 |---|---|---|
-| Recursos humanos | 6 personas × 15 h/sem × 10 sem × 25 €/h (900 h) | 22.500 € |
-| Infraestructura cloud (staging + prod) | 3 meses × 30 € | 90 € |
-| APIs externas (Mapbox, SMS) | Estimado | 60 € |
-| Herramientas (Jira/Trello, GitHub) | Planes gratuitos | 0 € |
-| **Presupuesto base (BAC)** | | **22.650 €** |
-| Reserva de contingencia (10 %) | | 2.265 € |
-| **Presupuesto total autorizado** | | **24.915 €** |
+| Recursos humanos | 6 personas × 15 h/sem × 10 sem × $15.000/h (900 h) | $13.500.000 |
+| Infraestructura cloud (staging + prod) | 3 meses × $30.000 | $90.000 |
+| APIs externas (Mapbox, SMS) | Estimado | $60.000 |
+| Herramientas (Jira/Trello, GitHub) | Planes gratuitos | $0 |
+| **Presupuesto base (BAC)** | | **$13.650.000** |
+| Reserva de contingencia (10 %) | | $1.365.000 |
+| **Presupuesto total autorizado** | | **$15.015.000** |
 
-*Re-baseline del 19/10/2026 (RFC-005). La baseline original (11 semanas, 990 h) era de 24.900 €.*
+*Montos en pesos chilenos (CLP). Re-baseline del 19/10/2026 (RFC-005); la baseline original (11 semanas, 990 h) era de $15.000.000.*
 
 *Presupuesto simulado. Desglose por paquete de trabajo en [07_Presupuesto_EVM.md](07_Presupuesto_EVM.md).*
 
@@ -190,7 +190,7 @@ El proyecto se considerará exitoso si:
 1. El MVP se despliega en staging con **≥ 16 requerimientos** cerrados y la demo se realiza sin fallos críticos.
 2. Se entregan los **10 artefactos obligatorios** de gestión.
 3. Los índices **SPI y CPI se mantienen ≥ 0,9**.
-4. Se obtiene feedback positivo (≥ 3,5/5) de al menos **3 usuarios reales**.
+4. Se obtiene feedback positivo (≥ 3,5/5) de al menos **3 personas ajenas al equipo** en la prueba de uso guiada.
 
 ---
 

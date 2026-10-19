@@ -50,7 +50,7 @@
 | Retrospectiva | C | C | R/A | C | C | C | — |
 | Métricas ágiles (velocity, burndown, lead/cycle time) | C | I | R/A | I | I | C | I |
 | Mockups UX/UI | I | R/A | C | I | I | C | — |
-| Feedback de usuarios reales (UAT) | C | R/A | C | I | I | C | I |
+| Prueba de uso con personas externas (UAT) | C | R/A | C | I | I | C | I |
 
 ### Desarrollo técnico
 

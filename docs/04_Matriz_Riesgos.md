@@ -32,7 +32,7 @@
 | R07 | Alcance | Scope creep: añadir funcionalidades no previstas (p. ej. multi-depósito, IA) → retrasos | 3 | 3 | 🟡 9 | Evitar | Todo cambio pasa por RFC y CCB; el PO protege el sprint en curso | M2 | Nº de RFC > 3 por sprint o tareas no planificadas en el tablero |
 | R08 | Equipo | Conflictos o mala comunicación entre miembros → bloqueos y retrabajo | 2 | 4 | 🟡 8 | Mitigar | Acuerdos de equipo, dailies, retrospectivas; escalado al PM y luego al Sponsor | M3 | Satisfacción del equipo < 3/5 o bloqueos > 2 días |
 | R09 | Calidad | Cobertura de tests insuficiente → defectos en la demo | 3 | 3 | 🟡 9 | Mitigar | Tests en la Definition of Done; el CI bloquea merges con tests fallidos; medir cobertura en cada PR | M6 | Cobertura < 40 % en S6 |
-| R10 | Usuarios | No conseguir 3 usuarios reales para feedback → requisito de evaluación incumplido | 2 | 4 | 🟡 8 | Mitigar | Contactar desde S5 con repartidores/despachadores conocidos; sesiones remotas de 20 min | M2 | Menos de 3 usuarios confirmados en S8 |
+| R10 | Usuarios | No conseguir 3 personas ajenas al equipo para la prueba de uso → requisito de evaluación incumplido | 1 | 4 | 🟢 4 | Mitigar | Pedirlo a compañeros de otros grupos o familiares; guion de tareas de 20 min y encuesta breve | M2 | Menos de 3 personas confirmadas el 16/11 |
 | R11 | Técnico | Fallo en el despliegue o caída de staging el día de la demo → demo fallida | 2 | 5 | 🟡 10 | Mitigar | Demo grabada de respaldo; feature freeze en H7; despliegue final 48 h antes | M6 | Change failure rate > 20 % |
 | R12 | Legal / seguridad | Exposición de datos personales del cliente (direcciones, teléfonos) en logs o enlaces → incumplimiento RGPD | 2 | 4 | 🟡 8 | Mitigar | Datos sintéticos en dev; anonimización en logs (RF14); tokens no adivinables en enlaces de tracking | M4 | Datos personales detectados en logs en revisión |
 | R13 | Técnico | Cambios o limitaciones en APIs externas (notificaciones push en iOS para PWA) → push no funciona en algunos móviles | 3 | 2 | 🟢 6 | Aceptar | Alternativa: notificación por SMS/email y aviso dentro de la app | M6 | Push no recibido en pruebas con iOS |
@@ -40,17 +40,17 @@
 
 ---
 
-## 3. Mapa de calor (situación en baseline)
+## 3. Mapa de calor (situación actual, 19/10/2026)
 
 | Probabilidad ↓ / Impacto → | 1 | 2 | 3 | 4 | 5 |
 | --- | --- | --- | --- | --- | --- |
 | **5** | | | | | |
-| **4** | | | R04 | R02 | R01 |
+| **4** | | | | R02, R04 | |
 | **3** | | R13 | R06, R07, R09 | R05 | R03 |
-| **2** | | | R14 | R08, R10, R12 | R11 |
-| **1** | | | | | |
+| **2** | | | R14, R15 | R08, R12 | R01, R11 |
+| **1** | | | | R10 | |
 
-**Riesgos prioritarios (rojo):** R01 (algoritmo VRP), R02 (disponibilidad del equipo), R03 (modo offline).
+**Riesgos prioritarios (rojo):** R02 (disponibilidad del equipo), R04 (subestimación, sube tras RFC-005) y R03 (modo offline). En la baseline (04/10) eran R01, R02 y R03; R01 bajó tras el Sprint 1.
 
 ---
 

@@ -89,7 +89,7 @@ RutaSmart (900 h)
 │   ├── 8.2 Simulador de rutas con datos sintéticos
 │   ├── 8.3 Pruebas de latencia ≤ 5 s (carga de 200 rutas: fuera del compromiso)
 │   ├── 8.4 Pruebas E2E
-│   └── 8.5 UAT con ≥ 3 usuarios reales
+│   └── 8.5 Prueba de uso guiada con ≥ 3 personas ajenas al equipo
 └── 9. Documentación ..................................... 35 h
     ├── 9.1 README, arquitectura y API (OpenAPI)
     ├── 9.2 Documentación del algoritmo (versión inicial; RF20 completo fuera del compromiso)

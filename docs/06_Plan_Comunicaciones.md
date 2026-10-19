@@ -39,7 +39,7 @@
 | Reporte EVM + 15 KPIs | Sponsor | Mensual (18/10, 15/11, 30/11) | Hoja "Métricas Seguimiento" + informe | M1 |
 | Solicitudes de cambio (RFC) y decisiones CCB | Equipo, Sponsor | Cuando ocurran | Formulario RFC + registro de cambios | M2 |
 | Alertas de riesgo o bloqueo crítico | PM → Sponsor | Inmediata (< 24 h) | Mensaje directo + reunión si hace falta | M1 |
-| Sesiones de feedback | Despachadores y repartidores | 02/11, 16/11 y UAT 26–29/11 | Entrevista / prueba guiada 20 min + formulario | M2 |
+| Prueba de uso guiada + encuesta | 3 personas ajenas al equipo | 26–29/11 | Entrevista / prueba guiada 20 min + formulario | M2 |
 | Entregas formales (1, 2, 3) | Sponsor / panel | 19/10 · 09/11 · 30/11 | Presentación + documentación | M1 |
 | Defensa final y lecciones aprendidas | Panel evaluador | 30/11 | Presentación + demo + documento | M1 |
 
