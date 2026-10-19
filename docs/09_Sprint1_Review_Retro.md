@@ -95,8 +95,10 @@ Guion en el [README](../README.md#guion-de-la-demo-sprint-review-h3):
 
 ---
 
-## 6. Sprint 2 (S5–S6) — próximo objetivo
+## 6. Sprint 2 (20/10 – 02/11) — próximo objetivo
 
 > *"El conductor recibe su ruta en el móvil y registra las entregas con evidencia."*
 
 HU-17 (Mapbox + SMS) · HU-04 (asignación + push) · HU-05 (app del repartidor) · HU-06 (evidencia de entrega) → **34 SP**.
+
+**Cambio de calendario (19/10/2026, RFC-005):** entregas el 09/11 y el 30/11. Quedan 3 sprints de 2 semanas; RF13 y RF20 salen del compromiso (18 requerimientos comprometidos).

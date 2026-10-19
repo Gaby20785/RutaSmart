@@ -1,6 +1,6 @@
 # Product Backlog — RutaSmart (P05)
 
-> Versión 1.0 · Hito H2 (Baseline) · Responsable: Product Owner
+> Versión 1.1 · Baseline H2, replanificada el 19/10/2026 (RFC-005) · Responsable: Product Owner
 > Priorización MoSCoW · Estimación en story points (Fibonacci: 1, 2, 3, 5, 8, 13)
 
 ---
@@ -20,12 +20,14 @@
 
 | Sprint | Semanas | Objetivo del sprint | SP |
 |---|---|---|---|
-| Sprint 1 | S3–S4 | Base técnica + gestión de flota y pedidos + primera optimización | 34 |
-| Sprint 2 | S5–S6 | Ejecución de la ruta: asignación, app del repartidor y evidencia de entrega | 34 |
-| Sprint 3 | S7–S8 | Control de la operación: seguimiento en vivo, reasignación y KPIs | 34 |
-| Sprint 4 | S9–S10 | Cliente final, rendimiento, offline y seguridad | 29 |
-| Sprint 5 | S11 | Escalabilidad, UX y documentación (antes del feature freeze) | 16 |
-| **Total** | | | **147** |
+| Sprint 1 | 05/10 – 18/10 | Base técnica + gestión de flota y pedidos + primera optimización | 34 ✅ |
+| Sprint 2 | 20/10 – 02/11 | Ejecución de la ruta: asignación, app del repartidor y evidencia de entrega | 34 |
+| Sprint 3 | 03/11 – 16/11 | Control de la operación: seguimiento en vivo, reasignación, KPIs y staging | 34 |
+| Sprint 4 | 17/11 – 30/11 | Cliente final, latencia, offline, seguridad y UX (feature freeze 26/11) | 34 |
+| **Comprometido** | | **18 requerimientos** | **136** |
+| *Si sobra capacidad* | | *RF13 (escalabilidad 200 rutas) y RF20 (documentación del algoritmo)* | *11* |
+
+> **Replanificación del 19/10/2026 (RFC-005):** el Sponsor fijó las entregas el 09/11 y el 30/11, así que quedan 3 sprints de 2 semanas en lugar de 4. Con la velocity del Sprint 1 (34 SP) caben 102 SP y quedaban 113. Se aplicó el plan B previsto: **RF13 y RF20 salen del compromiso** (11 SP). Seguimos en 18 requerimientos, por encima del mínimo de 16.
 
 > **Nota de replanificación respecto a la hoja P05 del Excel:** la hoja estima hasta 7 sprints, pero el calendario real tiene 5. Se han reagrupado los requerimientos y se han **adelantado RF15 (autenticación por rol) y RF18 (pipeline CI)** al Sprint 1, porque el hito H3 exige "setup + auth + pipeline CI". RF17 (integración con mapas) pasa al Sprint 2 porque la app del repartidor depende de ella. Cambios registrados como **RFC-001 y RFC-002** en [08_Control_Cambios.md](08_Control_Cambios.md).
 
@@ -33,7 +35,7 @@
 
 ## 3. Backlog priorizado
 
-### Sprint 1 (S3–S4) · Demo H3
+### Sprint 1 (05/10 – 18/10) · Demo H3 · ✅ terminado
 
 | ID | Req. | Historia de usuario | MoSCoW | SP |
 |---|---|---|---|---|
@@ -44,7 +46,7 @@
 | HU-02 | RF2 | **Como** despachador, **quiero** cargar pedidos con dirección, ventana horaria y peso/volumen (formulario o CSV), **para** planificar las entregas del día. | Must | 5 |
 | HU-03 | RF3 | **Como** despachador, **quiero** generar automáticamente las rutas óptimas del día, **para** reducir kilómetros y cumplir las ventanas horarias. | Must | 13 |
 
-### Sprint 2 (S5–S6) · Demo H4
+### Sprint 2 (20/10 – 02/11) · Demo H4
 
 | ID | Req. | Historia de usuario | MoSCoW | SP |
 |---|---|---|---|---|
@@ -53,7 +55,7 @@
 | HU-05 | RF5 | **Como** conductor, **quiero** ver mi ruta en un mapa con navegación paso a paso y marcar la llegada a cada parada, **para** seguir el orden óptimo. | Must | 13 |
 | HU-06 | RF6 | **Como** conductor, **quiero** registrar firma, foto y observaciones al entregar, **para** tener prueba de la entrega. | Must | 8 |
 
-### Sprint 3 (S7–S8) · Demo H5 + Checkpoint
+### Sprint 3 (03/11 – 16/11) · Checkpoint H5 (09/11) · Demo H6
 
 | ID | Req. | Historia de usuario | MoSCoW | SP |
 |---|---|---|---|---|
@@ -63,7 +65,7 @@
 | HU-19 | RF19 | **Como** equipo, **quiero** tests unitarios y un simulador de rutas con datos sintéticos, **para** validar el algoritmo y evitar regresiones. | Could | 5 |
 | HU-18b | RF18 | **Como** equipo, **quiero** despliegue continuo y entornos separados dev / staging / prod, **para** publicar versiones de forma segura. | Could | 3 |
 
-### Sprint 4 (S9–S10) · Demo H6
+### Sprint 4 (17/11 – 30/11) · Feature freeze H7 (26/11) · Entrega MVP H8
 
 | ID | Req. | Historia de usuario | MoSCoW | SP |
 |---|---|---|---|---|
@@ -71,13 +73,13 @@
 | HU-11 | RF11 | **Como** despachador, **quiero** que la posición de los conductores se actualice en ≤ 5 segundos, **para** tomar decisiones con datos actuales. | Must | 8 |
 | HU-12 | RF12 | **Como** conductor, **quiero** seguir trabajando sin cobertura y que los datos se sincronicen al recuperarla, **para** no perder entregas registradas. | Must | 13 |
 | HU-14 | RF14 | **Como** responsable de datos, **quiero** que los datos personales del cliente final no aparezcan en claro en los logs, **para** cumplir la protección de datos. | Should | 3 |
+| HU-16 | RF16 | **Como** conductor, **quiero** una interfaz con botones grandes y usable con una sola mano o con guantes, **para** operar con seguridad. | Should | 5 |
 
-### Sprint 5 (S11) · Feature freeze H7
+### Fuera del compromiso (solo si sobra capacidad) · RFC-005
 
 | ID | Req. | Historia de usuario | MoSCoW | SP |
 |---|---|---|---|---|
 | HU-13 | RF13 | **Como** empresa, **quiero** que el sistema soporte 200 rutas simultáneas, **para** poder crecer sin cambiar de herramienta. | Should | 8 |
-| HU-16 | RF16 | **Como** conductor, **quiero** una interfaz con botones grandes y usable con una sola mano o con guantes, **para** operar con seguridad. | Should | 5 |
 | HU-20 | RF20 | **Como** equipo, **quiero** documentar el algoritmo de optimización (modelo, restricciones, librería, limitaciones), **para** facilitar su mantenimiento. | Could | 3 |
 
 ---
@@ -152,7 +154,7 @@
 ### HU-19 · Tests + simulador
 - [ ] Tests unitarios del algoritmo y de los endpoints principales.
 - [ ] Script que genera pedidos sintéticos y compara km optimizados frente a asignación secuencial.
-- [ ] Cobertura ≥ 40 % al final del Sprint 3 (meta ≥ 60 % en S11).
+- [ ] Cobertura ≥ 40 % al final del Sprint 3 (meta ≥ 60 % el 30/11).
 
 ### HU-18b · CD + entornos
 - [ ] Merge a `develop` despliega automáticamente en staging.
@@ -215,4 +217,4 @@ Una historia se considera **terminada** cuando:
 | Habilitador técnico (EN-01) | — | 3 |
 | **Total** | **20** | **147** |
 
-> Para aprobar el MVP hacen falta ≥ 16 requerimientos. Si en el Checkpoint (H5) la velocity no da para todo, los primeros candidatos a recortar son **RF13, RF16 y RF20**: dejarlos fuera sigue permitiendo cumplir el mínimo.
+> Para aprobar el MVP hacen falta ≥ 16 requerimientos. Tras RFC-005 hay **18 comprometidos (136 SP)**; RF13 y RF20 quedan fuera del compromiso. Si en el Checkpoint (09/11) la velocity baja, el siguiente candidato a recortar es **RF16** (17 requerimientos, todavía por encima del mínimo).

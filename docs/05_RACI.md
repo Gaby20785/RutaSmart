@@ -77,15 +77,15 @@
 
 | Miembro | Gestión y diseño (WBS 1–2) | Desarrollo (WBS 3–7) | Testing y docs (WBS 8–9) | Total |
 | --- | --- | --- | --- | --- |
-| Miembro 1 (PM) | 120 | 0 | 45 | 165 |
-| Miembro 2 (PO) | 75 | 55 | 35 | 165 |
-| Miembro 3 (SM) | 15 | 135 | 15 | 165 |
-| Miembro 4 | 5 | 145 | 15 | 165 |
-| Miembro 5 | 10 | 140 | 15 | 165 |
-| Miembro 6 | 5 | 145 | 15 | 165 |
-| **Total** | **230** | **620** | **140** | **990** |
+| Miembro 1 (PM) | 110 | 0 | 40 | 150 |
+| Miembro 2 (PO) | 70 | 50 | 30 | 150 |
+| Miembro 3 (SM) | 15 | 125 | 10 | 150 |
+| Miembro 4 | 5 | 135 | 10 | 150 |
+| Miembro 5 | 10 | 125 | 15 | 150 |
+| Miembro 6 | 5 | 135 | 10 | 150 |
+| **Total** | **215** | **570** | **115** | **900** |
 
-> Cada miembro: 15 h/semana × 11 semanas = 165 h. La carga está **equilibrada** (rúbrica: "RACI documentado; asignaciones equilibradas").
+> Cada miembro: 15 h/semana × 10 semanas = 150 h (re-baseline RFC-005; antes 165 h con 11 semanas). La carga está **equilibrada** (rúbrica: "RACI documentado; asignaciones equilibradas").
 > Los totales por columna coinciden con la WBS. El tiempo de ceremonias Scrum de los desarrolladores se imputa a su paquete de desarrollo.
 
 ---

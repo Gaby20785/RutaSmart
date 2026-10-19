@@ -1,13 +1,13 @@
 # Presupuesto Base y Control EVM — RutaSmart (P05)
 
-> Versión 1.0 · Hito H2 (Baseline) · Responsable: Miembro 1 (PM)
+> Versión 1.1 · Baseline H2 + re-baseline del 19/10/2026 (RFC-005) · Responsable: Miembro 1 (PM)
 > **Presupuesto simulado** · Tarifa única: 25 €/h · Moneda: EUR
 
 ---
 
 ## 1. Supuestos de estimación
 
-- 6 personas × 15 h/semana × 11 semanas = **990 horas**.
+- 6 personas × 15 h/semana × 10 semanas = **900 horas** (antes 11 semanas y 990 h; ver §7).
 - Tarifa simulada homogénea de **25 €/h** para todos los roles.
 - Herramientas en planes gratuitos (GitHub, Jira/Trello, Notion).
 - Infraestructura cloud y APIs con consumo mínimo (planes de prueba / pago por uso).
@@ -15,37 +15,37 @@
 
 ---
 
-## 2. Presupuesto por paquete de trabajo (WBS)
+## 2. Presupuesto por paquete de trabajo (WBS) · baseline vigente v1.1
 
 | WBS | Paquete | Horas | Coste (€) | % |
 | --- | --- | --- | --- | --- |
-| 1 | Gestión del proyecto | 150 | 3.750 | 15,1 % |
-| 2 | Análisis y diseño | 80 | 2.000 | 8,0 % |
-| 3 | Plataforma y DevOps | 70 | 1.750 | 7,0 % |
-| 4 | Backend (FastAPI + VRP) | 250 | 6.250 | 25,1 % |
-| 5 | Frontend – Panel web | 140 | 3.500 | 14,1 % |
-| 6 | App repartidor (PWA) | 130 | 3.250 | 13,1 % |
-| 7 | Integraciones | 30 | 750 | 3,0 % |
-| 8 | Calidad y testing | 90 | 2.250 | 9,0 % |
-| 9 | Documentación | 50 | 1.250 | 5,0 % |
-| | **Subtotal mano de obra** | **990** | **24.750** | 99,4 % |
+| 1 | Gestión del proyecto | 140 | 3.500 | 15,5 % |
+| 2 | Análisis y diseño | 75 | 1.875 | 8,3 % |
+| 3 | Plataforma y DevOps | 65 | 1.625 | 7,2 % |
+| 4 | Backend (FastAPI + VRP) | 225 | 5.625 | 24,8 % |
+| 5 | Frontend – Panel web | 130 | 3.250 | 14,3 % |
+| 6 | App repartidor (PWA) | 120 | 3.000 | 13,2 % |
+| 7 | Integraciones | 30 | 750 | 3,3 % |
+| 8 | Calidad y testing | 80 | 2.000 | 8,8 % |
+| 9 | Documentación | 35 | 875 | 3,9 % |
+| | **Subtotal mano de obra** | **900** | **22.500** | 99,3 % |
 | — | Infraestructura cloud (3 meses × 30 €) | | 90 | 0,4 % |
-| — | APIs externas (Mapbox, SMS) | | 60 | 0,2 % |
-| | **Presupuesto base (BAC)** | | **24.900** | 100 % |
-| — | Reserva de contingencia (10 %) | | 2.490 | |
-| | **Presupuesto total autorizado** | | **27.390** | |
+| — | APIs externas (Mapbox, SMS) | | 60 | 0,3 % |
+| | **Presupuesto base (BAC)** | | **22.650** | 100 % |
+| — | Reserva de contingencia (10 %) | | 2.265 | |
+| | **Presupuesto total autorizado** | | **24.915** | |
 
 ---
 
-## 3. Curva de valor planificado (PV)
+## 3. Curva de valor planificado (PV) · baseline vigente v1.1
 
-Distribución mensual según el cronograma (90 h/semana de equipo + 50 €/mes de costes externos):
+Distribución según el cronograma (90 h/semana de equipo + 50 €/mes de costes externos):
 
-| Mes | Semanas | Horas plan. | PV del mes (€) | PV acumulado (€) | % del BAC |
+| Mes | Periodo | Horas plan. | PV del mes (€) | PV acumulado (€) | % del BAC |
 | --- | --- | --- | --- | --- | --- |
-| Mes 1 | S1–S4 (21/09 – 18/10) | 360 | 9.050 | 9.050 | 36,3 % |
-| Mes 2 | S5–S8 (19/10 – 15/11) | 360 | 9.050 | 18.100 | 72,7 % |
-| Mes 3 | S9–S11 (16/11 – 06/12) | 270 | 6.800 | 24.900 | 100 % |
+| Mes 1 | 21/09 – 18/10 | 360 | 9.050 | 9.050 | 40,0 % |
+| Mes 2 | 19/10 – 15/11 | 360 | 9.050 | 18.100 | 79,9 % |
+| Mes 3 | 16/11 – 30/11 | 180 | 4.550 | 22.650 | 100 % |
 
 ---
 
@@ -99,3 +99,21 @@ Si la gestión (S1–S2) representa el 18 % del proyecto (180 h de 990) y en el 
 | Fecha | Riesgo asociado | Importe usado | Saldo | Aprobado por |
 | --- | --- | --- | --- | --- |
 | 04/10/2026 | — | 0 € | 2.490 € | M1 |
+
+---
+
+## 7. Re-baseline del 19/10/2026 (RFC-005)
+
+El Sponsor fijó las entregas el 09/11 y el 30/11: el proyecto pasa de 11 a 10 semanas.
+
+| Concepto | Baseline original (v1.0) | Baseline vigente (v1.1) | Diferencia |
+| --- | --- | --- | --- |
+| Duración | 11 semanas (hasta 06/12) | 10 semanas (hasta 30/11) | −1 semana |
+| Horas | 990 h | 900 h | −90 h |
+| BAC | 24.900 € | 22.650 € | −2.250 € |
+| Reserva (10 %) | 2.490 € | 2.265 € | −225 € |
+| Alcance comprometido | 20 requerimientos · 147 SP | 18 requerimientos · 136 SP | RF13 y RF20 fuera |
+
+- **El reporte del mes 1 (§5) se mantiene contra la baseline original**, que era la vigente en el corte del 18/10 (SPI 1,02).
+- **Desde el mes 2 se mide contra la baseline v1.1.** Con ella, el avance acumulado al 18/10 es: gestión (180 h de 900 = 20 %) + 34 de 136 SP × 80 % (20 %) = **40 %**, es decir, EV = 9.060 € frente a PV = 9.050 € → SPI ≈ 1,00.
+

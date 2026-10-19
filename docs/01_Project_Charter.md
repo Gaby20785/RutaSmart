@@ -1,7 +1,7 @@
 # Project Charter — RutaSmart (P05)
 
 > Optimizador de rutas de entrega con seguimiento en vivo
-> Versión 1.0 · Hito H1 (Kick-off) · Estado: **Borrador para aprobación**
+> Versión 1.1 · Aprobado en H1 (Kick-off) · Actualizado el 19/10/2026 por el nuevo calendario del Sponsor (RFC-005)
 
 ---
 
@@ -13,9 +13,9 @@
 | Código | P05 |
 | Sector | Logística de última milla |
 | Metodología | Híbrida: PMI (gobierno) + Scrum (ejecución) |
-| Duración | 11 semanas (S1–S11) |
+| Duración | 10 semanas (21/09 – 30/11/2026) |
 | Fecha de inicio | 21/09/2026 (S1 · selección del proyecto el 25/09) |
-| Fecha de entrega MVP | 06/12/2026 (S11 · H8) |
+| Fecha de entrega MVP | 30/11/2026 (Entrega 3 · H8) |
 | Patrocinador (Sponsor) | Profesor/a – Panel evaluador |
 | Equipo | 6 personas (Miembro 1 – Miembro 6) |
 | Project Manager | Miembro 1 *(propuesta)* |
@@ -40,12 +40,12 @@ Las empresas pequeñas y medianas de reparto de última milla suelen planificar 
 
 | # | Objetivo | Métrica / Criterio | Plazo |
 |---|---|---|---|
-| O1 | Entregar un MVP funcional desplegado en staging | ≥ 16 de 20 requerimientos cerrados (meta: 20) | S11 |
-| O2 | Optimizar rutas frente a una asignación manual | ≥ 15 % menos km totales en simulación con datos sintéticos | S8 |
-| O3 | Seguimiento en vivo fiable | Latencia de actualización de posición ≤ 5 s | S10 |
-| O4 | Calidad del software | Cobertura de tests ≥ 40 % en S6 y ≥ 60 % en S11 | S6 / S11 |
+| O1 | Entregar un MVP funcional desplegado en staging | ≥ 16 de 20 requerimientos cerrados (meta: 18 comprometidos) | 30/11 |
+| O2 | Optimizar rutas frente a una asignación manual | ≥ 15 % menos km totales en simulación con datos sintéticos | 09/11 |
+| O3 | Seguimiento en vivo fiable | Latencia de actualización de posición ≤ 5 s | 30/11 |
+| O4 | Calidad del software | Cobertura de tests ≥ 40 % el 02/11 y ≥ 60 % el 30/11 | 02/11 · 30/11 |
 | O5 | Gestión dentro de línea base | SPI ≥ 0,9 y CPI ≥ 0,9 en cada reporte mensual | Mensual |
-| O6 | Validación con usuarios | Feedback documentado de ≥ 3 usuarios reales | S11 |
+| O6 | Validación con usuarios | Feedback documentado de ≥ 3 usuarios reales | 30/11 |
 
 ---
 
@@ -95,26 +95,26 @@ Las empresas pequeñas y medianas de reparto de última milla suelen planificar 
 | H1 | S1 | 27/09/2026 | Kick-off: Charter y stakeholders aprobados | **Entrega 1** (19/10) |
 | H2 | S2 | 04/10/2026 | Baseline aprobada: WBS, Gantt, presupuesto, riesgos, comunicaciones | **Entrega 1** (19/10) |
 | H3 | S4 | 18/10/2026 | Demo Sprint 1: setup, autenticación, CI, flota, pedidos y optimización básica | **Entrega 1** (19/10) |
-| H4 | S6 | 01/11/2026 | Demo Sprint 2: asignación, app repartidor, evidencia de entrega · tests > 40 % | Entrega 2 (~16/11) |
-| H5 | S8 | 15/11/2026 | Demo Sprint 3 + Checkpoint intermedio: replanificación | Entrega 2 (~16/11) |
-| H6 | S10 | 29/11/2026 | Demo Sprint 4: hardening, seguridad, offline, notificaciones | Entrega 3 (~07/12) |
-| H7 | S11 | 03/12/2026 | Feature freeze: solo corrección de errores | Entrega 3 (~07/12) |
-| H8 | S11 | 06/12/2026 | Entrega MVP + defensa + cierre formal | Entrega 3 (~07/12) |
+| H4 | S6 | 02/11/2026 | Demo Sprint 2: asignación, app repartidor, evidencia de entrega · tests > 40 % | Entrega 2 (09/11) |
+| H5 | S8 | 09/11/2026 | **Checkpoint intermedio** con el panel: avance y replanificación | **Entrega 2** (09/11) |
+| H6 | S9 | 16/11/2026 | Demo Sprint 3: seguimiento en vivo, reasignación, KPIs, staging | Entrega 3 (30/11) |
+| H7 | S10 | 26/11/2026 | Feature freeze: solo corrección de errores | Entrega 3 (30/11) |
+| H8 | S10 | 30/11/2026 | Entrega MVP + defensa + cierre formal | **Entrega 3** (30/11) |
 
-*Fechas de las entregas 2 y 3 estimadas; se ajustarán cuando el profesor las confirme.*
+*Fechas de entrega fijadas por el Sponsor el 19/10/2026 (RFC-005). El calendario inicial de 11 semanas del curso era referencial.*
 
 ---
 
 ## 7. Supuestos y restricciones
 
 **Supuestos**
-- El equipo dedica ~15 h/semana por persona durante las 11 semanas.
+- El equipo dedica ~15 h/semana por persona durante las 10 semanas.
 - Los planes gratuitos o de prueba de Mapbox y del proveedor SMS son suficientes para el MVP.
 - Se utilizan datos sintéticos de pedidos y direcciones (no datos reales de clientes).
 - Se puede acceder a ≥ 3 usuarios (repartidores/despachadores) para pruebas y feedback.
 
 **Restricciones**
-- Plazo fijo: entrega en S11, sin posibilidad de ampliación.
+- Plazo fijo: entrega final el 30/11/2026, sin posibilidad de ampliación.
 - Stack sugerido: React, FastAPI, PostGIS, Mapbox.
 - Mínimo 16 de 20 requerimientos para aprobar el MVP.
 - Presupuesto simulado limitado (ver §9).
@@ -140,13 +140,15 @@ Las empresas pequeñas y medianas de reparto de última milla suelen planificar 
 
 | Concepto | Cálculo | Importe |
 |---|---|---|
-| Recursos humanos | 6 personas × 15 h/sem × 11 sem × 25 €/h (990 h) | 24.750 € |
+| Recursos humanos | 6 personas × 15 h/sem × 10 sem × 25 €/h (900 h) | 22.500 € |
 | Infraestructura cloud (staging + prod) | 3 meses × 30 € | 90 € |
 | APIs externas (Mapbox, SMS) | Estimado | 60 € |
 | Herramientas (Jira/Trello, GitHub) | Planes gratuitos | 0 € |
-| **Presupuesto base (BAC)** | | **24.900 €** |
-| Reserva de contingencia (10 %) | | 2.490 € |
-| **Presupuesto total autorizado** | | **27.390 €** |
+| **Presupuesto base (BAC)** | | **22.650 €** |
+| Reserva de contingencia (10 %) | | 2.265 € |
+| **Presupuesto total autorizado** | | **24.915 €** |
+
+*Re-baseline del 19/10/2026 (RFC-005). La baseline original (11 semanas, 990 h) era de 24.900 €.*
 
 *Presupuesto simulado. Desglose por paquete de trabajo en [07_Presupuesto_EVM.md](07_Presupuesto_EVM.md).*
 

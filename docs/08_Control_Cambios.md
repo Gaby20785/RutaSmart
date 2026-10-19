@@ -56,6 +56,7 @@ Se reúne tras el refinamiento semanal (jueves) o de forma extraordinaria si el 
 | RFC-002 | 02/10/2026 | Reagrupar los requerimientos de 7 sprints estimados (hoja P05) a los 5 sprints del calendario real | M2 (PO) | Sin cambio | Ajusta la carga por sprint (~34 SP) | 0 € | ✅ Aprobada |
 | RFC-003 | 15/10/2026 | Añadir al optimizador la opción "Equilibrar carga entre conductores" (activada por defecto) | M5 (Dev) | Mejora de RF3, sin historias nuevas | +1 SP absorbido en el Sprint 1 | 0 € | ✅ Aprobada |
 | RFC-004 | 15/10/2026 | Guardar coordenadas como lat/lng (no como tipo geográfico PostGIS) y usar Nominatim como geocodificador provisional hasta Mapbox | M4 (Dev) | Criterio de aceptación de HU-02 parcialmente aplazado | Tipos PostGIS + Alembic pasan al Sprint 3 (+2 SP) | 0 € | ✅ Aprobada |
+| RFC-005 | 19/10/2026 | Nuevo calendario del Sponsor: Entrega 2 el 09/11 y Entrega 3 el 30/11 (antes ~16/11 y ~07/12) | Sponsor | RF13 y RF20 salen del compromiso: 18 requerimientos, 136 SP | De 11 a 10 semanas; 3 sprints de 2 semanas | BAC de 24.900 € a 22.650 € | ✅ Aprobada |
 
 ### Detalle RFC-003
 
@@ -75,3 +76,15 @@ Se reúne tras el refinamiento semanal (jueves) o de forma extraordinaria si el 
 - **Impacto en el tiempo:** el Sprint 1 pasa a 34 SP; se compensa moviendo RF13 y RF16 al Sprint 5.
 - **Riesgo asociado:** R01 (el Sprint 1 concentra el algoritmo VRP); se mitiga con OR-Tools.
 - **Decisión:** aprobada por el CCB antes de fijar la baseline (H2).
+
+### Detalle RFC-005
+
+- **Origen:** el Sponsor (profesor) fija las fechas de entrega el 19/10/2026. El calendario de 11 semanas del curso era referencial.
+- **Análisis de impacto:**
+  - *Tiempo:* quedan 6 semanas (20/10 – 30/11) en lugar de 7. Se organizan 3 sprints de 2 semanas para mantener las Sprint Reviews quincenales; la Entrega 2 (09/11) cae a mitad del Sprint 3 y se presenta con el Sprint 2 terminado.
+  - *Alcance:* con la velocity del Sprint 1 (34 SP) caben 102 SP y quedaban 113. Se aplica el plan B ya previsto en el backlog: RF13 (Should, 8 SP) y RF20 (Could, 3 SP) salen del compromiso; se recuperan si sobra capacidad.
+  - *Coste:* 90 h menos de capacidad → BAC de 22.650 € (re-baseline).
+  - *Riesgos:* R04 (subestimación) sube a alto (16).
+- **Alternativas descartadas:** 2 sprints de 3 semanas (se pierden las reviews quincenales que pide el curso); mantener los 20 requerimientos (exigiría 113 SP en 102 SP de capacidad).
+- **Decisión:** aprobada por el CCB el 19/10/2026. Se actualizan el Charter, el backlog, la WBS, el cronograma, la RACI, el presupuesto, la matriz de riesgos y el plan de comunicaciones (versión 1.1).
+
