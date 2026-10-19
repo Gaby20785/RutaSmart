@@ -45,7 +45,7 @@
 | Defectos abiertos al cierre | 0 | — |
 | RFC del sprint | 2 (RFC-001, RFC-002) | — |
 | Burndown | `[exportar del tablero]` | — |
-| Horas reales del equipo (mes 1) | ≈ 320 h (estimación de cada integrante) | 360 h planificadas |
+| Horas reales del equipo (mes 1) | ≈ 130 h (estimación de cada integrante) | 144 h planificadas |
 
 ### Defectos detectados y corregidos
 
@@ -80,7 +80,7 @@ Guion en el [README](../README.md#guion-de-la-demo-sprint-review-h3):
 ### ¿Qué se puede mejorar?
 - Algunos errores solo aparecieron al probar la aplicación completa, no en los tests.
 - Las horas se estimaron al final del mes en lugar de registrarlas cada día.
-- Dedicamos menos horas de las planificadas (≈ 13 h/semana por persona en lugar de 15).
+- Dedicamos menos horas de las planificadas (≈ 5 h/semana por persona en lugar de 6).
 
 ### Acciones para el Sprint 2
 

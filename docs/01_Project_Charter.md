@@ -108,7 +108,7 @@ Las empresas pequeñas y medianas de reparto de última milla suelen planificar 
 ## 7. Supuestos y restricciones
 
 **Supuestos**
-- El equipo dedica ~15 h/semana por persona durante las 10 semanas.
+- El equipo dedica ~6 h/semana por persona durante las 10 semanas (proyecto académico, compatible con otras asignaturas y trabajo).
 - Los planes gratuitos o de prueba de Mapbox y del proveedor SMS son suficientes para el MVP.
 - Se utilizan datos sintéticos de pedidos y direcciones (no datos reales de clientes).
 - Las pruebas de uso se hacen con personas ajenas al equipo (compañeros de otros grupos, familiares o amigos) que asumen el rol de despachador o repartidor; no se requieren profesionales de logística.
@@ -140,15 +140,15 @@ Las empresas pequeñas y medianas de reparto de última milla suelen planificar 
 
 | Concepto | Cálculo | Importe |
 |---|---|---|
-| Recursos humanos | 6 personas × 15 h/sem × 10 sem × $15.000/h (900 h) | $13.500.000 |
+| Recursos humanos | 6 personas × 6 h/sem × 10 sem × $15.000/h (360 h) | $5.400.000 |
 | Infraestructura cloud (staging + prod) | 3 meses × $30.000 | $90.000 |
 | APIs externas (Mapbox, SMS) | Estimado | $60.000 |
 | Herramientas (Jira/Trello, GitHub) | Planes gratuitos | $0 |
-| **Presupuesto base (BAC)** | | **$13.650.000** |
-| Reserva de contingencia (10 %) | | $1.365.000 |
-| **Presupuesto total autorizado** | | **$15.015.000** |
+| **Presupuesto base (BAC)** | | **$5.550.000** |
+| Reserva de contingencia (10 %) | | $555.000 |
+| **Presupuesto total autorizado** | | **$6.105.000** |
 
-*Montos en pesos chilenos (CLP). Re-baseline del 19/10/2026 (RFC-003); la baseline original (11 semanas, 990 h) era de $15.000.000.*
+*Montos en pesos chilenos (CLP). Re-baseline del 19/10/2026 (RFC-003); la baseline original (11 semanas, 396 h) era de $6.090.000.*
 
 *Presupuesto simulado. Desglose por paquete de trabajo en [07_Presupuesto_EVM.md](07_Presupuesto_EVM.md).*
 

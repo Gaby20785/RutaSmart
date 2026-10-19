@@ -54,7 +54,7 @@ Se reúne tras el refinamiento semanal (jueves) o de forma extraordinaria si el 
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | RFC-001 | 08/10/2026 | Mostrar las rutas en un mapa de OpenStreetMap desde el Sprint 1, sin esperar a la integración con Mapbox (Sprint 2) | M5 (Dev) | Sin cambio en los requerimientos | Sin impacto | $0 | ✅ Aprobada |
 | RFC-002 | 15/10/2026 | Añadir al optimizador la opción «Equilibrar carga entre conductores» (activada por defecto) | M5 (Dev) | Mejora de RF3, sin historias nuevas | +1 SP absorbido en el Sprint 1 | $0 | ✅ Aprobada |
-| RFC-003 | 19/10/2026 | Ajuste del calendario: el proyecto cierra el 30/11 (10 semanas en lugar de 11), con revisión intermedia el 09/11 | M1 (PM) | RF13 y RF20 salen del compromiso: 18 requerimientos, 136 SP | De 11 a 10 semanas; 3 sprints de 2 semanas | BAC de $15.000.000 a $13.650.000 | ✅ Aprobada |
+| RFC-003 | 19/10/2026 | Ajuste del calendario: el proyecto cierra el 30/11 (10 semanas en lugar de 11), con revisión intermedia el 09/11 | M1 (PM) | RF13 y RF20 salen del compromiso: 18 requerimientos, 136 SP | De 11 a 10 semanas; 3 sprints de 2 semanas | BAC de $6.090.000 a $5.550.000 | ✅ Aprobada |
 
 > Las decisiones tomadas durante la planificación, antes de aprobar la baseline (H2), no se registran como RFC: el control de cambios aplica a la baseline aprobada.
 
@@ -77,7 +77,7 @@ Se reúne tras el refinamiento semanal (jueves) o de forma extraordinaria si el 
 - **Análisis de impacto:**
   - *Tiempo:* quedan 6 semanas (20/10 – 30/11) en lugar de 7. Se organizan 3 sprints de 2 semanas para mantener las Sprint Reviews quincenales; la revisión del 09/11 cae a mitad del Sprint 3 y se presenta con el Sprint 2 terminado.
   - *Alcance:* con la velocity del Sprint 1 (34 SP) caben 102 SP y quedaban 113. Se aplica el plan B ya previsto en el backlog: RF13 (Should, 8 SP) y RF20 (Could, 3 SP) salen del compromiso; se recuperan si sobra capacidad.
-  - *Coste:* 90 h menos de capacidad → BAC de $13.650.000 (re-baseline).
+  - *Coste:* 36 h menos de capacidad → BAC de $5.550.000 (re-baseline).
   - *Riesgos:* R04 (subestimación) sube a alto (16).
 - **Alternativas descartadas:** 2 sprints de 3 semanas (se pierden las reviews quincenales); mantener los 20 requerimientos (exigiría 113 SP con 102 SP de capacidad).
 - **Decisión:** aprobada por el CCB el 19/10/2026. Se actualizan el Charter, el backlog, la WBS, el cronograma, la RACI, el presupuesto, la matriz de riesgos y el plan de comunicaciones (versión 1.1).

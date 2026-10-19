@@ -1,7 +1,7 @@
 # WBS y Cronograma — RutaSmart (P05)
 
 > Versión 1.1 · Baseline H2, replanificada el 19/10/2026 (RFC-003) · Responsable: Miembro 1 (PM)
-> Capacidad: 6 personas × 15 h/semana × 10 semanas = **900 horas**
+> Capacidad: 6 personas × 6 h/semana × 10 semanas = **360 horas**
 
 ---
 
@@ -40,24 +40,24 @@
 ## 2. WBS (Estructura de Desglose del Trabajo)
 
 ```text
-RutaSmart (900 h)
-├── 1. Gestión del proyecto ............................ 140 h
+RutaSmart (360 h)
+├── 1. Gestión del proyecto ............................ 56 h
 │   ├── 1.1 Iniciación: Charter, stakeholders, kick-off
 │   ├── 1.2 Planificación: WBS, Gantt, presupuesto, riesgos, RACI, comunicaciones, backlog
 │   ├── 1.3 Seguimiento y control: EVM mensual, KPIs, riesgos, RFC/CCB
 │   ├── 1.4 Ceremonias Scrum: planning, daily, review, retro
 │   └── 1.5 Cierre: lecciones aprendidas, acta de cierre, defensa
-├── 2. Análisis y diseño ................................ 75 h
+├── 2. Análisis y diseño ................................ 30 h
 │   ├── 2.1 Historias de usuario y criterios de aceptación
 │   ├── 2.2 Arquitectura del sistema
 │   ├── 2.3 Modelo de datos (PostgreSQL + PostGIS)
 │   └── 2.4 Mockups UX/UI (panel web y app repartidor)
-├── 3. Plataforma y DevOps .............................. 65 h
+├── 3. Plataforma y DevOps .............................. 26 h
 │   ├── 3.1 Repositorio, estructura y Docker
 │   ├── 3.2 Pipeline CI (lint, build, tests)
 │   ├── 3.3 CD y entornos dev / staging / prod
 │   └── 3.4 Monitoreo y dashboard DORA
-├── 4. Backend (FastAPI) ............................... 225 h
+├── 4. Backend (FastAPI) ............................... 90 h
 │   ├── 4.1 Autenticación y roles (JWT)
 │   ├── 4.2 Gestión de flota, conductores y vehículos
 │   ├── 4.3 Pedidos y geocodificación
@@ -68,29 +68,29 @@ RutaSmart (900 h)
 │   ├── 4.8 KPIs y reportes
 │   ├── 4.9 Notificación al cliente final (ETA + enlace)
 │   └── 4.10 Anonimización de datos en logs
-├── 5. Frontend – Panel web (React) .................... 130 h
+├── 5. Frontend – Panel web (React) .................... 52 h
 │   ├── 5.1 Login y navegación por rol
 │   ├── 5.2 Gestión de flota y pedidos (incl. importación CSV)
 │   ├── 5.3 Visualización de rutas en mapa
 │   ├── 5.4 Seguimiento en vivo
 │   ├── 5.5 Dashboard de KPIs
 │   └── 5.6 Página pública de tracking para el cliente
-├── 6. App repartidor (PWA) ............................ 120 h
+├── 6. App repartidor (PWA) ............................ 48 h
 │   ├── 6.1 Ruta del día y navegación
 │   ├── 6.2 Check-in por parada
 │   ├── 6.3 Evidencia de entrega (firma, foto, observaciones)
 │   ├── 6.4 Modo offline y sincronización
 │   └── 6.5 UI para uso con una mano / guantes
-├── 7. Integraciones ..................................... 30 h
+├── 7. Integraciones ..................................... 12 h
 │   ├── 7.1 Mapbox (mapas, geocoding, directions)
 │   └── 7.2 Proveedor SMS / email
-├── 8. Calidad y testing ................................. 80 h
+├── 8. Calidad y testing ................................. 32 h
 │   ├── 8.1 Tests unitarios e integración
 │   ├── 8.2 Simulador de rutas con datos sintéticos
 │   ├── 8.3 Pruebas de latencia ≤ 5 s (carga de 200 rutas: fuera del compromiso)
 │   ├── 8.4 Pruebas E2E
 │   └── 8.5 Prueba de uso guiada con ≥ 3 personas ajenas al equipo
-└── 9. Documentación ..................................... 35 h
+└── 9. Documentación ..................................... 14 h
     ├── 9.1 README, arquitectura y API (OpenAPI)
     ├── 9.2 Documentación del algoritmo (versión inicial; RF20 completo fuera del compromiso)
     └── 9.3 Manual de usuario y demo grabada
@@ -100,16 +100,16 @@ RutaSmart (900 h)
 
 | Código | Paquete | Entregable | Responsable | Horas | Semanas |
 | --- | --- | --- | --- | --- | --- |
-| 1 | Gestión del proyecto | Charter, baseline, reportes EVM, retros, acta de cierre | M1 | 140 | S1–S10 |
-| 2 | Análisis y diseño | Backlog, arquitectura, modelo de datos, mockups | M2 | 75 | S1–S4 |
-| 3 | Plataforma y DevOps | Repo, CI/CD, entornos, dashboard DORA | M6 | 65 | S3–S10 |
-| 4 | Backend | API REST + WebSocket, motor VRP | M4 / M5 | 225 | S3–S10 |
-| 5 | Frontend panel web | Panel de admin y despachador | M3 | 130 | S3–S10 |
-| 6 | App repartidor | PWA del conductor | M6 | 120 | S5–S10 |
-| 7 | Integraciones | Conectores Mapbox y SMS | M5 | 30 | S5–S9 |
-| 8 | Calidad y testing | Suite de tests, simulador, pruebas de latencia y UAT | M6 / M1 | 80 | S3–S10 |
-| 9 | Documentación | Docs técnicas, manual, demo grabada | M1 / M5 | 35 | S7–S10 |
-| | **Total** | | | **900** | |
+| 1 | Gestión del proyecto | Charter, baseline, reportes EVM, retros, acta de cierre | M1 | 56 | S1–S10 |
+| 2 | Análisis y diseño | Backlog, arquitectura, modelo de datos, mockups | M2 | 30 | S1–S4 |
+| 3 | Plataforma y DevOps | Repo, CI/CD, entornos, dashboard DORA | M6 | 26 | S3–S10 |
+| 4 | Backend | API REST + WebSocket, motor VRP | M4 / M5 | 90 | S3–S10 |
+| 5 | Frontend panel web | Panel de admin y despachador | M3 | 52 | S3–S10 |
+| 6 | App repartidor | PWA del conductor | M6 | 48 | S5–S10 |
+| 7 | Integraciones | Conectores Mapbox y SMS | M5 | 12 | S5–S9 |
+| 8 | Calidad y testing | Suite de tests, simulador, pruebas de latencia y UAT | M6 / M1 | 32 | S3–S10 |
+| 9 | Documentación | Docs técnicas, manual, demo grabada | M1 / M5 | 14 | S7–S10 |
+| | **Total** | | | **360** | |
 
 ---
 
